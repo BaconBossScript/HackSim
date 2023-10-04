@@ -81,7 +81,7 @@ TpTab:AddToggle({
 TpTab:AddDropdown({
 	Name = "Select",
 	Default = "Computer1",
-	Options = {"Computer1", "Computer2", "Computer3", "Computer4", "Computer5", "Computer6", "Computer7", "Computer8", "Computer9", "Computer10", "Computer11", "Computer12", "Computer13", "Computer14", "Computer15"},
+	Options = {"Computer1", "Computer2", "Computer3", "Computer4", "Computer5", "Computer6", "Computer7", "Computer8", "Computer9", "Computer10", "Computer11", "Computer12", "Computer13", "Computer14", "Computer15", "Computer16", "Computer17", "Computer18", "Computer19", "Computer20"},
 	Callback = function(Value)
 	    _G.scom = Value  
 	end    
@@ -108,7 +108,7 @@ Tp2Tab:AddToggle({
 Tp2Tab:AddDropdown({
 	Name = "Select",
 	Default = "Bacon Hair",
-	Options = {"Bacon Hair", "Nerd", "Teacher", "Mafia Member", "Gigachad Hacker", "Gamer", "Sk8ter", "Rich Man", "Ninja", "God Hacker", "DIY Robot", "Wise Man", "Evil Noob", "Cyborg", "Evil Mech"},
+	Options = {"Bacon Hair", "Nerd", "Teacher", "Mafia Member", "Gigachad Hacker", "Gamer", "Sk8ter", "Rich Man", "Ninja", "God Hacker", "DIY Robot", "Wise Man", "Evil Noob", "Cyborg", "Evil Mech", "Scuba Diver", "Duck Man", "Toilet", "Sea Creature", "Poseiden"},
 	Callback = function(Value)
 	    _G.swin = Value  
 	end    
@@ -135,6 +135,13 @@ Tp3Tab:AddButton({
     end
 }) 
 
+Tp3Tab:AddButton({
+	Name = "Zone 4",
+	Callback = function()
+     Teleport(game:GetService("Workspace").ZoneParts.Zone4.CFrame)
+    end
+}) 
+
 _G.segg = "Crass Egg"
 _G.egg = true
 function egg()
@@ -156,7 +163,7 @@ Tp5Tab:AddToggle({
 Tp5Tab:AddDropdown({
 	Name = "Select",
 	Default = "Crass Egg",
-	Options = {"Crass Egg", "Vault Egg", "Gem Egg", "Error Egg", "Hack Egg", "Evil Egg", "Flying Egg"},
+	Options = {"Crass Egg", "Vault Egg", "Gem Egg", "Error Egg", "Hack Egg", "Evil Egg", "Flying Egg", "Beach Egg", "Ocean Egg"},
     Callback = function(Value)
 	    _G.segg = Value  
 	end    
